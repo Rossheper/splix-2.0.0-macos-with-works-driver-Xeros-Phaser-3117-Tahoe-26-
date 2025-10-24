@@ -1,7 +1,7 @@
-This is based on splix-2.0.0 (see initial commit).
+This is based on fork splix-2.0.0-macos.
 
-I've modified this to compile on MacOS 12.3.
-I tested it using a M1 Macbook Air and a Samsung ML-1520.
+I've recompile this on MacOS Taheo 26.0.1.
+I tested it using a M1 Pro Macbook Pro 14 and a Xeros Phaser 3117.
 
 You probably need to install the xcode command line utils:
 xcode-select --install
@@ -15,8 +15,3 @@ sudo make install
 To compile without jbig:
 make DISABLE_JBIG=1
 sudo make install
-
-
-Original README:
-
-Check INSTALL :o)
