@@ -1,17 +1,19 @@
-This is based on fork splix-2.0.0-macos.
+Форк репозитория janrueth/splix-2.0.0-macos.
 
-I've recompile this on MacOS Taheo 26.0.1.
-I tested it using a M1 Pro Macbook Pro 14 and a Xeros Phaser 3117.
+Успешно пересобран под свой Macbook Pro 14 M1 Pro (Tahoe 26.0.1) для подключения принтера Xerox Phaser 3117.
 
-You probably need to install the xcode command line utils:
+Для сборки необходимо установить:
 xcode-select --install
+Homebrew (на сайте скопировать команду в terminal).
 
-In case your printer needs jbig:
+После установки homebrew terminal надо перезапустить.
+
+Команды для сборки:
+
+Если принтер использует jbig:
 brew install jbigkit
-
-make
 sudo make install
 
-To compile without jbig:
+Если принтер НЕ использует jbig:
 make DISABLE_JBIG=1
 sudo make install
